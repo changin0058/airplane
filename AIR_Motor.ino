@@ -1,0 +1,31 @@
+
+//  AIR_Motor
+//  yc-elec.taobao.com
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE. 
+
+void setup()
+{
+    pinMode(5, OUTPUT);   
+    pinMode(6, OUTPUT);   
+    pinMode(9, OUTPUT);  
+    pinMode(10, OUTPUT); 
+    
+    delay(100);
+}
+void loop () {
+  int throttle = 8;//0~255  
+  
+  analogWrite(5, throttle);
+  analogWrite(6, throttle);
+  analogWrite(9, throttle);
+  analogWrite(10, throttle);
+}
+
+
